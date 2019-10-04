@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+        function App(props) {
+            console.log(props)
+          return (
+            <span>
+                    {props.children}
+            </span>
+  );
+}
+
+
+          ReactDOM.render(
+            <App >
+             <div className="top">
+        <nav>
+
+          <a href="/">Home</a>
+          <a href="/about_me">About me</a>
+          <a href="/blog">Blog</a>
+
+        </nav>
+
+        <header>
+          <h1>Sally Student</h1>
+          <a href="mailto:SallyStudent@yupitsme.com">Sally@yupitsme.com</a><br></br>
+          <a href="tel:+11111111111">(111) 111-1111</a>
+               
+         </header>
+          <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="picture of sally student" width="100" height="180"></img>
+ </div>
+          <section className="education">
+            <h2>Education</h2>
+            <h4>The Best High school</h4>
+            <p>2013-2015</p>
+            <h4>The Best University</h4>
+            <p>2013-2015</p>
+          </section>
+          <section className="employment">
+            <h2>Employment history</h2>
+            <h4>Barrys Bootcamp</h4>
+            <p>Front Desk</p>
+            <p>May-2016 to Jan-2018</p>
+            <p>worked front desk. Greeted guests ect</p>
+            <h4>The Fake Resturant</h4>
+            <p>Server</p>
+            <p>Feb-2018 to present </p>
+            <p>Took care of mean people</p>
+          </section>
+          <header>
+            <h1>About me</h1>
+          </header>
+          <section className="skills">
+            <header>
+              <h2>Skills</h2>
+            </header>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+            </ul>
+          </section>
+
+          <section>
+            <header>
+              <h2>Contact Info</h2>
+            </header>
+
+            <p>Twitter: <a href="https://twitter.com/sallyStudent">@sallyStudent</a></p>
+          </section>
+
+
+  </App>,document.querySelector('#application-root')
+          );
+    </script>
+</body>
+
+</body>
+
+</html>
